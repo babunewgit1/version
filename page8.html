@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- Meta setup -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="author" content="Mahmudul Hasan">
+		
+		<!-- Title -->
+		<title>Welcome</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="img/fav.png" />	
+
+		<!-- Include Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="css/style.css" />	
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		
+	
+	</head>
+	<body id="page2">
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		  <div id="wrapper">
+
+			<!-- header area start -->
+			<div class="header sticky-top">
+				<div class="container">
+					<div class="header-wrapper">
+						<div class="logo">
+							<a href="index.html">
+								<img src="img/logo.svg" alt="images not found">
+							</a>
+							<div class="bar d-block d-lg-none type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="menulink">
+							<ul>
+								<li><a id="bar" href="#">START</a></li>
+								<li><a id="bar" href="#">FACHGEBIETE</a></li>
+								<li><a id="bar" href="#">ANGEBOT</a>
+									<ul>
+										<li><a href="#">Ergotherapie</a></li>
+										<li><a href="#">Handtherapie</a></li>
+										<li><a href="#">Niedrigschwellige Betreuung</a></li>
+									</ul>
+								</li>
+								<li><a id="bar" href="#">ZIELE</a>
+									<ul>
+										<li><a href="#">Körperstrukturen & -funktionen</a></li>
+										<li><a href="#">Aktivitäten</a></li>
+										<li><a href="#">Teilhabe</a></li>
+									</ul>
+								</li>
+								<li><a class="active" id="bar" href="#">PRAXIS</a>
+									<ul>
+										<li><a href="#">Mitarbeiter</a></li>
+										<li><a href="#">Räume</a></li>
+										<li><a href="#">Kooperationen / Partner</a></li>
+									</ul>
+								</li>
+								<li><a id="bar" href="#">BEHANDLUNGSORTE</a></li>
+								<li><a id="bar" href="#">KONTAKT</a></li>
+							</ul>
+						</div>
+						<div class="searchbar">
+							<div class="search-input">
+								<input type="text" placeholder="Suchwort">
+							</div>
+							<div class="search-button">
+								<button><img src="img/search.svg" alt="images not found"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header area end -->
+
+			<!-- mobile-menu start -->
+			<div class="mobileites">
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+					<div class="offcanvas-header">
+					  <h5 id="offcanvasRightLabel">
+						<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+					  </h5>
+					  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="mobile-menu">
+							<div class="mobilesearch">
+								<div class="searchbar d-flex">
+									<div class="search-input">
+										<input type="text" placeholder="Suchwort">
+									</div>
+									<div class="search-button">
+										<button><img src="img/search.svg" alt="images not found"></button>
+									</div>
+								</div>
+							</div>
+							<div class="mobile-menu-items">
+								<ul>
+									<li><a href="#">START</a></li>
+									<li><a href="#">FACHGEBIETE</a></li>
+									<li onclick="toggle(this)"><a href="#">ANGEBOT <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Ergotherapie</a></li>
+											<li><a href="#">Handtherapie</a></li>
+											<li><a href="#">Niedrigschwellige Betreuung</a></li>
+										</ul>
+									</li>
+									<li onclick="toggle(this)"><a href="#">ZIELE <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Körperstrukturen & -funktionen</a></li>
+											<li><a href="#">Aktivitäten</a></li>
+											<li><a href="#">Teilhabe</a></li>
+										</ul>
+									</li>
+									<li onclick="toggle(this)"><a href="javascript:void(0);">PRAXIS <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Mitarbeiter</a></li>
+											<li><a href="#">Räume</a></li>
+											<li><a href="#">Kooperationen / Partner</a></li>
+										</ul>
+									</li>
+									<li><a href="#">BEHANDLUNGSORTE</a></li>
+									<li><a href="#">KONTAKT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				 </div>
+			</div>
+			<!-- mobile-menu end -->
+
+			<div class="main-content">
+				<div class="main-sliderp7">
+					<!-- p8heading area start -->
+					<div class="p8heading">
+						<div class="container">
+							<div class="p7heading-wrapper">
+								<div class="p4heading-text text-center">
+									<h3 class="h3">KOOPERATIONEN & PARTNER</h3>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- p8heading area end -->
+
+					<!-- p8logo area start -->
+					<div class="p8logo">
+						<div class="container">
+							<div class="p8logo-wrapper">
+								<div class="row">
+									<div class="col-lg-4 col-md-6">
+										<a id="mainboxlink" href="#">
+											<div class="p8logo-one text-center">
+												<p>AKADEMIE FÜR HANDREHABILITATION (AFH)</p>
+												<img src="img/lg1.png" alt="images not found">
+												<a id="sublink" href="#">
+													<span>
+														<svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+													</span>
+													ZUR WEBSITE
+												</a>
+											</div>
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<a id="mainboxlink" href="#">
+											<div class="p8logo-one text-center">
+												<p>STAMOS & BRAUN PROTHESENWERK</p>
+												<img src="img/lg2.png" alt="images not found">
+												<a id="sublink" href="#">
+													<span>
+														<svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+													</span>
+													ZUR WEBSITE
+												</a>
+											</div>
+										</a>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<a id="mainboxlink" href="#">
+											<div class="p8logo-one text-center">
+												<p>„VEREINIGUNG ZUR HANDTHERAPIE“ <br> (DAHTH)</p>
+												<img src="img/lg3.png" alt="images not found">
+												<a id="sublink" href="#">
+													<span>
+														<svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#C04231" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+													</span>
+													ZUR WEBSITE
+												</a>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- p8logo area end -->
+				</div>
+			</div>
+
+			<!-- footer area start -->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-wrapper">
+						<div class="row align-items-end">
+							<div class="col-lg-4">
+								<div class="footer-left">
+									<p>2012-2022 / Ergopraxis WeiBer Hirsch</p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-middle text-center">
+									<h6 class="h6">ERGOPRAXIS WEIBER HIRSCH</h6>
+									<span id="fbar"></span>
+									<p>Plattleite 49 <span>/</span> 01324 Dresden</p>
+									<a href="tel:+49 (0)351 210 66 56"><strong>TELEFON: </strong>+49 (0)351 210 66 56</a> <br>
+									<a href="mailto:kontakt@ergopraxis-weisser-hirsch.de"><strong>E-MAIL: </strong>kontakt@ergopraxis-weisser-hirsch.de</a>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-right text-end">
+									<ul>
+										<li><a id="bar" href="#">IMPRESSUM </a></li>
+										<li><a id="bar" href="#">DATENSCHUTZ </a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer area end -->
+		</div>
+
+
+
+
+		 
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Main jQuery -->
+		<script src="js/jquery-3.6.0.min.js"></script>		
+
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script src="js/lightbox.js"></script>
+		
+		<!-- Fontawesome Script -->
+		<script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+
+		<!-- Custom jQuery -->
+		<script src="js/scripts.js"></script>
+
+		<script>			
+			function toggle (ul) {
+				ul.children[1].classList.toggle('active');
+			}
+		</script>
+
+<script>
+	var myCarousel = document.querySelector('.carousel')
+	var carousel = new bootstrap.Carousel(myCarousel, {
+		interval: false,
+	})
+</script>
+	
+	</body>
+</html>

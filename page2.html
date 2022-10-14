@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- Meta setup -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="decription" content="">
+		<meta name="author" content="Mahmudul Hasan">
+		
+		<!-- Title -->
+		<title>Welcome</title>
+		
+		<!-- Fav Icon -->
+		<link rel="icon" href="img/fav.png" />	
+
+		<!-- Include Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<!-- Main StyleSheet -->
+		<link rel="stylesheet" href="css/style.css" />	
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		
+	
+	</head>
+	<body id="page2">
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+		  <div id="wrapper">
+
+			<!-- header area start -->
+			<div class="header sticky-top">
+				<div class="container">
+					<div class="header-wrapper">
+						<div class="logo">
+							<a href="index.html">
+								<img src="img/logo.svg" alt="images not found">
+							</a>
+							<div class="bar d-block d-lg-none type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="menulink">
+							<ul>
+								<li><a id="bar" href="#">START</a></li>
+								<li><a class="active" id="bar" href="#">FACHGEBIETE</a></li>
+								<li><a id="bar" href="#">ANGEBOT</a>
+									<ul>
+										<li><a href="#">Ergotherapie</a></li>
+										<li><a href="#">Handtherapie</a></li>
+										<li><a href="#">Niedrigschwellige Betreuung</a></li>
+									</ul>
+								</li>
+								<li><a id="bar" href="#">ZIELE</a>
+									<ul>
+										<li><a href="#">Körperstrukturen & -funktionen</a></li>
+										<li><a href="#">Aktivitäten</a></li>
+										<li><a href="#">Teilhabe</a></li>
+									</ul>
+								</li>
+								<li><a id="bar" href="#">PRAXIS</a>
+									<ul>
+										<li><a href="#">Mitarbeiter</a></li>
+										<li><a href="#">Räume</a></li>
+										<li><a href="#">Kooperationen / Partner</a></li>
+									</ul>
+								</li>
+								<li><a id="bar" href="#">BEHANDLUNGSORTE</a></li>
+								<li><a id="bar" href="#">KONTAKT</a></li>
+							</ul>
+						</div>
+						<div class="searchbar">
+							<div class="search-input">
+								<input type="text" placeholder="Suchwort">
+							</div>
+							<div class="search-button">
+								<button><img src="img/search.svg" alt="images not found"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header area end -->
+
+			<!-- mobile-menu start -->
+			<div class="mobileites">
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+					<div class="offcanvas-header">
+					  <h5 id="offcanvasRightLabel">
+						<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+					  </h5>
+					  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="mobile-menu">
+							<div class="mobilesearch">
+								<div class="searchbar d-flex">
+									<div class="search-input">
+										<input type="text" placeholder="Suchwort">
+									</div>
+									<div class="search-button">
+										<button><img src="img/search.svg" alt="images not found"></button>
+									</div>
+								</div>
+							</div>
+							<div class="mobile-menu-items">
+								<ul>
+									<li><a href="#">START</a></li>
+									<li><a href="#">FACHGEBIETE</a></li>
+									<li onclick="toggle(this)"><a href="#">ANGEBOT <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Ergotherapie</a></li>
+											<li><a href="#">Handtherapie</a></li>
+											<li><a href="#">Niedrigschwellige Betreuung</a></li>
+										</ul>
+									</li>
+									<li onclick="toggle(this)"><a href="#">ZIELE <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Körperstrukturen & -funktionen</a></li>
+											<li><a href="#">Aktivitäten</a></li>
+											<li><a href="#">Teilhabe</a></li>
+										</ul>
+									</li>
+									<li onclick="toggle(this)"><a href="javascript:void(0);">PRAXIS <span><i class="fa-solid fa-chevron-down"></i></span></a>
+										<ul>
+											<li><a href="#">Mitarbeiter</a></li>
+											<li><a href="#">Räume</a></li>
+											<li><a href="#">Kooperationen / Partner</a></li>
+										</ul>
+									</li>
+									<li><a href="#">BEHANDLUNGSORTE</a></li>
+									<li><a href="#">KONTAKT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				 </div>
+			</div>
+			<!-- mobile-menu end -->
+
+			<div class="main-content">
+				<!-- fach area start -->
+				<div class="p2fach">
+					<div class="container">
+						<div class="p2fach-wrapper">
+							<div class="p2fach-heading text-center">
+								<h3 class="h2">FACHGEBIETE</h3>
+								<span class="barline"></span>
+								<p>Jeder Mensch soll die für ihn bedeutungsvollen/ wichtigen Betätigungen ausführen können. Wenn das nicht geht, kann <br> Ergotherapie helfen, Funktionen und Aktivitäten wiederherzustellen und damit zu mehr Lebensqualität beitragen.</p>
+							</div>
+							<div class="p2fach-block">
+								<div class="p2fach-block-one">
+									<div class="p2fach-block-one-img">
+										<span>
+											<a data-caption='Das ist eine kurze Bildunterschrift z.B. "Therapie in unserer Praxis"' href="img/picx1.png" data-toggle="lightbox" data-gallery="example-gallery">
+												<img id="imgtoggle" src="img/pic1.png">
+											</a>
+											<svg id="lupe" xmlns="http://www.w3.org/2000/svg" width="21.894" height="24" viewBox="0 0 21.894 24">
+											<g id="Gruppe_41" data-name="Gruppe 41" transform="translate(-0.001 0)">
+											  <path id="Pfad_43" data-name="Pfad 43" d="M21.895,21.826l-6.78-6.878a8.8,8.8,0,1,0-2.553,1.822L19.69,24ZM3.258,9.519a5.63,5.63,0,1,1,6.234,4.952A5.63,5.63,0,0,1,3.258,9.519" transform="translate(0 0)"/>
+											</g>
+										 </svg></span>
+										 <img src="img/pic1.png"/>
+									</div>
+									<div class="p2fach-hidden-content">
+										<div class="p2fach-block-one-down">
+											<div class="p2fach-block-one-down-left">
+												<p class="h5">PÄDIATRIE</p>
+											</div>
+											<div class="p2fach-block-one-down-right">
+												<span><img src="img/da.png" alt="images not found"></span>
+											</div>
+										</div>
+										<div class="p2fach-textarea">
+											<div class="p2fach-textarea-wrapper">
+												<div class="p2fach-pada">
+													<p>Bei Kindern geht es in der Ergotherapie oft um eine Verbesserung der Wahrnehmung, der Motorik und Grafomotorik, der Integration frühkindlicher Reflexe, einer Verbesserung der Aufmerksamkeit und Eigensteuerung sowie Verhaltensanpassung für ein erfolgreiches Lernen. Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</p>
+												</div>
+												<div class="p2fach-deshi">
+													<h6 class="h6">DIES IST EINE ZEILE FÜR EINE ZWEIZEILIGE ZWISCHENÜBERSCHRIFT IN TEXT</h6>
+													<ul>
+														<li>Bei Kindern geht es in der <a href="#">Ergotherapie</a> oft um eine Verbesserung der Wahrnehmung</li>
+														<li>Ein kurzer Stichpunkt</li>
+														<li>Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</li>
+													</ul>
+	
+													<a id="awithsvg" href="#">
+														<span><svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+														</span>
+														NIEDRIGSCHWELLIGER BETREUUNG
+													</a>
+													<div class="p2fach-top text-end">
+														<span><img src="img/da.png" alt="arrow images"></span>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div class="p2fach-block-one">
+									<div class="p2fach-block-one-img">
+										<span>
+											<a data-caption="This describes the image" href="img/picx2.png" data-toggle="lightbox" data-gallery="example-gallery">
+												<img id="imgtoggle" src="img/pic2.png">
+											</a>
+											<svg id="lupe" xmlns="http://www.w3.org/2000/svg" width="21.894" height="24" viewBox="0 0 21.894 24">
+											<g id="Gruppe_41" data-name="Gruppe 41" transform="translate(-0.001 0)">
+											  <path id="Pfad_43" data-name="Pfad 43" d="M21.895,21.826l-6.78-6.878a8.8,8.8,0,1,0-2.553,1.822L19.69,24ZM3.258,9.519a5.63,5.63,0,1,1,6.234,4.952A5.63,5.63,0,0,1,3.258,9.519" transform="translate(0 0)"/>
+											</g>
+										 </svg></span>
+										 <img src="img/pic2.png"/>
+									</div>
+									<div class="p2fach-hidden-content">
+										<div class="p2fach-block-one-down">
+											<div class="p2fach-block-one-down-left">
+												<p class="h5">NEUROLOGIE</p>
+											</div>
+											<div class="p2fach-block-one-down-right">
+												<span><img src="img/da.png" alt="images not found"></span>
+											</div>
+										</div>
+										<div class="p2fach-textarea">
+											<div class="p2fach-textarea-wrapper">
+												<div class="p2fach-pada">
+													<p>Bei Kindern geht es in der Ergotherapie oft um eine Verbesserung der Wahrnehmung, der Motorik und Grafomotorik, der Integration frühkindlicher Reflexe, einer Verbesserung der Aufmerksamkeit und Eigensteuerung sowie Verhaltensanpassung für ein erfolgreiches Lernen. Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</p>
+												</div>
+												<div class="p2fach-deshi">
+													<h6 class="h6">DIES IST EINE ZEILE FÜR EINE ZWEIZEILIGE ZWISCHENÜBERSCHRIFT IN TEXT</h6>
+													<ul>
+														<li>Bei Kindern geht es in der <a href="#">Ergotherapie</a> oft um eine Verbesserung der Wahrnehmung</li>
+														<li>Ein kurzer Stichpunkt</li>
+														<li>Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</li>
+													</ul>
+	
+													<a id="awithsvg" href="#">
+														<span><svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+														</span>
+														NIEDRIGSCHWELLIGER BETREUUNG
+													</a>
+													<div class="p2fach-top text-end">
+														<span><img src="img/da.png" alt="arrow images"></span>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div class="p2fach-block-one">
+									<div class="p2fach-block-one-img">
+										<span>
+											<a data-caption="This describes the image" href="img/picx3.png" data-toggle="lightbox" data-gallery="example-gallery">
+												<img id="imgtoggle" src="img/pic3.png">
+											</a>
+											<svg id="lupe" xmlns="http://www.w3.org/2000/svg" width="21.894" height="24" viewBox="0 0 21.894 24">
+											<g id="Gruppe_41" data-name="Gruppe 41" transform="translate(-0.001 0)">
+											  <path id="Pfad_43" data-name="Pfad 43" d="M21.895,21.826l-6.78-6.878a8.8,8.8,0,1,0-2.553,1.822L19.69,24ZM3.258,9.519a5.63,5.63,0,1,1,6.234,4.952A5.63,5.63,0,0,1,3.258,9.519" transform="translate(0 0)"/>
+											</g>
+										 </svg></span>
+										 <img src="img/pic4.png"/>
+									</div>
+									<div class="p2fach-hidden-content">
+										<div class="p2fach-block-one-down">
+											<div class="p2fach-block-one-down-left">
+												<p class="h5">PSYCHISCHE GESUNDHEIT</p>
+											</div>
+											<div class="p2fach-block-one-down-right">
+												<span><img src="img/da.png" alt="images not found"></span>
+											</div>
+										</div>
+										<div class="p2fach-textarea">
+											<div class="p2fach-textarea-wrapper">
+												<div class="p2fach-pada">
+													<p>Bei Kindern geht es in der Ergotherapie oft um eine Verbesserung der Wahrnehmung, der Motorik und Grafomotorik, der Integration frühkindlicher Reflexe, einer Verbesserung der Aufmerksamkeit und Eigensteuerung sowie Verhaltensanpassung für ein erfolgreiches Lernen. Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</p>
+												</div>
+												<div class="p2fach-deshi">
+													<h6 class="h6">DIES IST EINE ZEILE FÜR EINE ZWEIZEILIGE ZWISCHENÜBERSCHRIFT IN TEXT</h6>
+													<ul>
+														<li>Bei Kindern geht es in der <a href="#">Ergotherapie</a> oft um eine Verbesserung der Wahrnehmung</li>
+														<li>Ein kurzer Stichpunkt</li>
+														<li>Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</li>
+													</ul>
+	
+													<a id="awithsvg" href="#">
+														<span><svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+														</span>
+														NIEDRIGSCHWELLIGER BETREUUNG
+													</a>
+													<div class="p2fach-top text-end">
+														<span><img src="img/da.png" alt="arrow images"></span>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div class="p2fach-block-one">
+									<div class="p2fach-block-one-img">
+										<span>
+											<a data-caption="This describes the image" href="img/picx4.png" data-toggle="lightbox" data-gallery="example-gallery">
+												<img id="imgtoggle" src="img/pic4.png">
+											</a>
+											<svg id="lupe" xmlns="http://www.w3.org/2000/svg" width="21.894" height="24" viewBox="0 0 21.894 24">
+											<g id="Gruppe_41" data-name="Gruppe 41" transform="translate(-0.001 0)">
+											  <path id="Pfad_43" data-name="Pfad 43" d="M21.895,21.826l-6.78-6.878a8.8,8.8,0,1,0-2.553,1.822L19.69,24ZM3.258,9.519a5.63,5.63,0,1,1,6.234,4.952A5.63,5.63,0,0,1,3.258,9.519" transform="translate(0 0)"/>
+											</g>
+										 </svg></span>
+										 <img src="img/pic4.png"/>
+									</div>
+									<div class="p2fach-hidden-content">
+										<div class="p2fach-block-one-down">
+											<div class="p2fach-block-one-down-left">
+												<p class="h5">CHIRURGIE / UNFALL</p>
+											</div>
+											<div class="p2fach-block-one-down-right">
+												<span><img src="img/da.png" alt="images not found"></span>
+											</div>
+										</div>
+										<div class="p2fach-textarea">
+											<div class="p2fach-textarea-wrapper">
+												<div class="p2fach-pada">
+													<p>Bei Kindern geht es in der Ergotherapie oft um eine Verbesserung der Wahrnehmung, der Motorik und Grafomotorik, der Integration frühkindlicher Reflexe, einer Verbesserung der Aufmerksamkeit und Eigensteuerung sowie Verhaltensanpassung für ein erfolgreiches Lernen. Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</p>
+												</div>
+												<div class="p2fach-deshi">
+													<h6 class="h6">DIES IST EINE ZEILE FÜR EINE ZWEIZEILIGE ZWISCHENÜBERSCHRIFT IN TEXT</h6>
+													<ul>
+														<li>Bei Kindern geht es in der <a href="#">Ergotherapie</a> oft um eine Verbesserung der Wahrnehmung</li>
+														<li>Ein kurzer Stichpunkt</li>
+														<li>Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</li>
+													</ul>
+	
+													<a id="awithsvg" href="#">
+														<span><svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+														</span>
+														NIEDRIGSCHWELLIGER BETREUUNG
+													</a>
+													<div class="p2fach-top text-end">
+														<span><img src="img/da.png" alt="arrow images"></span>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div class="p2fach-block-one">
+									<div class="p2fach-block-one-img">
+										<span>
+											<a data-caption="This describes the image" href="img/picx5.png" data-toggle="lightbox" data-gallery="example-gallery">
+												<img id="imgtoggle" src="img/pic5.png">
+											</a>
+											<svg id="lupe" xmlns="http://www.w3.org/2000/svg" width="21.894" height="24" viewBox="0 0 21.894 24">
+											<g id="Gruppe_41" data-name="Gruppe 41" transform="translate(-0.001 0)">
+											  <path id="Pfad_43" data-name="Pfad 43" d="M21.895,21.826l-6.78-6.878a8.8,8.8,0,1,0-2.553,1.822L19.69,24ZM3.258,9.519a5.63,5.63,0,1,1,6.234,4.952A5.63,5.63,0,0,1,3.258,9.519" transform="translate(0 0)"/>
+											</g>
+										 </svg></span>
+										 <img src="img/pic5.png"/>
+									</div>
+									<div class="p2fach-hidden-content">
+										<div class="p2fach-block-one-down">
+											<div class="p2fach-block-one-down-left">
+												<p class="h5">ORTHOPÄDIE</p>
+											</div>
+											<div class="p2fach-block-one-down-right">
+												<span><img src="img/da.png" alt="images not found"></span>
+											</div>
+										</div>
+										<div class="p2fach-textarea">
+											<div class="p2fach-textarea-wrapper">
+												<div class="p2fach-pada">
+													<p>Bei Kindern geht es in der Ergotherapie oft um eine Verbesserung der Wahrnehmung, der Motorik und Grafomotorik, der Integration frühkindlicher Reflexe, einer Verbesserung der Aufmerksamkeit und Eigensteuerung sowie Verhaltensanpassung für ein erfolgreiches Lernen. Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</p>
+												</div>
+												<div class="p2fach-deshi">
+													<h6 class="h6">DIES IST EINE ZEILE FÜR EINE ZWEIZEILIGE ZWISCHENÜBERSCHRIFT IN TEXT</h6>
+													<ul>
+														<li>Bei Kindern geht es in der <a href="#">Ergotherapie</a> oft um eine Verbesserung der Wahrnehmung</li>
+														<li>Ein kurzer Stichpunkt</li>
+														<li>Die Elternberatung ist Bestandteil der <a href="#">Ergotherapie.</a> In der Umfeldberatung suchen wir den Kontakt zu Lehrpersonen und Erzieherinnen, damit sich die neuen Strategien auch im Alltag festigen können.</li>
+													</ul>
+	
+													<a id="awithsvg" href="#">
+														<span><svg xmlns="http://www.w3.org/2000/svg" width="27.324" height="28.243" viewBox="0 0 27.324 28.243">
+															<g id="pfleil-weiss-button" transform="translate(1.5 2.121)">
+															  <line id="Linie_6" data-name="Linie 6" x2="12" y2="12" transform="translate(11.703 24) rotate(-90)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															  <line id="Linie_7" data-name="Linie 7" x2="12" y2="12" transform="translate(11.703 0)" fill="none" stroke="#2C377D" stroke-linecap="round" stroke-width="3"/>
+															</g>
+														 </svg>
+														</span>
+														NIEDRIGSCHWELLIGER BETREUUNG
+													</a>
+													<div class="p2fach-top text-end">
+														<span><img src="img/da.png" alt="arrow images"></span>
+													</div>
+												</div>
+											</div>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fach area end -->
+			</div>
+
+			<!-- footer area start -->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-wrapper">
+						<div class="row align-items-end">
+							<div class="col-lg-4">
+								<div class="footer-left">
+									<p>2012-2022 / Ergopraxis WeiBer Hirsch</p>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-middle text-center">
+									<h6 class="h6">ERGOPRAXIS WEIBER HIRSCH</h6>
+									<span id="fbar"></span>
+									<p>Plattleite 49 <span>/</span> 01324 Dresden</p>
+									<a href="tel:+49 (0)351 210 66 56"><strong>TELEFON: </strong>+49 (0)351 210 66 56</a> <br>
+									<a href="mailto:kontakt@ergopraxis-weisser-hirsch.de"><strong>E-MAIL: </strong>kontakt@ergopraxis-weisser-hirsch.de</a>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-right text-end">
+									<ul>
+										<li><a id="bar" href="#">IMPRESSUM </a></li>
+										<li><a id="bar" href="#">DATENSCHUTZ </a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer area end -->
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Main jQuery -->
+		<script src="js/jquery-3.6.0.min.js"></script>		
+
+		<!-- Bootstrap Js -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<script src="js/lightbox.js"></script>
+		
+		<!-- Fontawesome Script -->
+		<script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+
+		<!-- Custom jQuery -->
+		<script src="js/scripts.js"></script>
+
+
+		<script>			
+			function toggle (ul) {
+				ul.children[1].classList.toggle('active');
+			}
+		</script>
+
+		<script>
+			const tigger = document.querySelectorAll('.p2fach-block-one-down-right');
+			tigger.forEach(span => {
+				span.addEventListener("click", ()=> {
+					const current = span.parentElement.nextElementSibling;
+					const active = document.querySelector('.active');
+					const sactive = document.querySelector('.sactive');
+					if(!current.classList.contains('active') && active) {
+						active.classList.remove('active');
+					}
+
+					if(!current.classList.contains('sactive') && sactive) {
+						sactive.classList.remove('sactive');
+					}
+					current.classList.add('active');
+					span.classList.add('sactive');
+				})
+			});
+			
+			const offTig = document.querySelectorAll(".p2fach-top span");
+			offTig.forEach(function (hideEle) {
+				hideEle.addEventListener('click', ()=> {
+					const activeClass = document.querySelectorAll(".p2fach-textarea");
+					activeClass.forEach(function (oneActive) {
+						oneActive.classList.remove('active');
+						hideEle.parentElement.parentElement.parentElement.parentElement.previousElementSibling.children[1].classList.remove('sactive');
+					})
+					
+				})
+			});
+		</script>
+
+		
+	</body>
+</html>
